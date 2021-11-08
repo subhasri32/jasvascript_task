@@ -1,0 +1,91 @@
+Get all the countries from Asia continent /region using Filter function
+fetch("https://restcountries.eu/rest/v2/all")
+.then((resp) => {
+    return resp.json();
+})
+.then((result) => {
+           let regArr=result.filter((element)=>{
+               if(element.region=="Asia"){
+                  return element.region;
+               }
+           }
+           );
+           console.log(regArr);
+    
+
+})
+.catch((err) => {console.log(err);});
+2.)Get all the countries with a population of less than 2 lakhs using Filter function
+
+fetch("https://restcountries.eu/rest/v2/all")
+.then((resp) => {
+    return resp.json();
+})
+.then((result) => {
+           let popArr=result.filter((element)=>{
+               if(element.population<200000){
+                  return element.population;
+               }
+           }
+           );
+           console.log(popArr);
+    
+
+})
+.catch((err) => {console.log(err);});
+3.)Print the following details name, capital, flag using forEach function
+
+fetch("https://restcountries.eu/rest/v2/all")
+.then((resp) => {
+    return resp.json();
+})
+.then((result) => {
+           result.forEach((element)=>{
+           
+               console.log(element.name+" "+element.capital+" "+element.flag);
+           });
+    
+
+})
+.catch((err) => {console.log(err);});
+
+4.)Print the total population of countries using reduce function
+
+fetch("https://restcountries.eu/rest/v2/all")
+.then((resp) => {
+    return resp.json();
+})
+.then((result) => {
+    let popArr =result.filter((ele)=>{
+         if(ele.population < 200000){
+             return ele.population;
+        }
+    });
+           let tot=popArr.reduce((prev,curr)=>{
+               return prev+curr;
+
+           });
+           console.log(popArr)
+           console.log(tot);
+    
+
+})
+.catch((err) => {console.log(err);});
+
+5.)Print the country which uses US Dollars as currency.
+
+fetch("https://restcountries.eu/rest/v2/all")
+.then((resp) => {
+    return resp.json();
+})
+.then((result) => {
+    let currency =result.filter((ele)=>{
+         if(ele.currencies.code =="USD"){
+             return ele.currencies.code;
+        }
+    });
+           console.log(currency);
+    
+
+})
+.catch((err) => {console.log(err);});
