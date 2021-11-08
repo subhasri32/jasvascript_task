@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+            
+    </head>
+    <body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div>
+                Guvi Geek Network
+            </div>
+    </div>
+
+        </body>
+    </html>
+    ------------------
+cotact us form:
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        input[type="text"] {
+           /* width: 100%;
+            height:100%
+            padding:12px;
+            border: 1px ;
+            border-radius: 4px*/;
+           }
+        #main{
+            width:200px;
+            height:200px;
+            margin:20%
+        }
+        #name{
+            width:200%;
+            height:200%
+        
+        }
+        #email{
+            width:200%;
+            height:200%
+       }
+        #message{
+            width:200%;
+            height:200%;
+            
+        }
+    </style>
+</head>
+<body>
+ <div id="main"> 
+    <form action="" method="GET">
+    <!-- form created with line breaks -->
+    Contact Us:<br><br>
+   <div id="name">
+        <input type="text" name="first_name" placeholder="Enter your first name please" > <br><br>
+    </div>
+    <div id="email">
+                <input type="email" name="email" placeholder="Enter your Email" > <br><br>
+    </div>
+    <div id="message">
+        <input type="message" name="message" placeholder="Enter your message" > <br><br>
+    </div>
+    <div id="sub">
+        <input type="submit" value="submit" >
+    </div>
+    </form>
+</div>
+    
+</body>
+
+4.)Use certain HTML elements to display the following in a HTML page.
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+    <div id="main">
+    <ul>
+        <li>Programming Language</li>
+        <div id="suba">
+          <ul>
+            <li>JavaScript</li>
+            <div id="sub1">
+                <ol type="a">
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ol>
+                </div>
+            <li>Python</li>
+            <div id="sub2">
+                <ol type="a">
+                    <li>Django Framework</li>
+                    <li>Flask Framework</li>
+                </ol>
+                </div>
+            <li>Java</li>
+            <div id="sub3">
+                <ol type="a">
+                    <li>Spring</li>
+                    <li>Maven</li>
+                    <li>Hibernate</li>
+                </ol>
+            </div>
+        </ul>
+        <li>Database</li>
+           <div id="subb">
+               <ul>
+                   <li>MySQL</li>
+                   <li>MongoDB</li>
+                   <li>Cansandra</li>
+               </ul>
+           </div>
+        </ul>
+</body>
+
+
+5.)create an element that helps you to open google in new tab
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+    <ul>
+    <li><a href="https://www.google.com">Google</a></li>
+</body>
+
+6.)In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        #employee{
+            width:400px;
+            background-color: rgb(100, 52, 17);
+            color:silver;
+            display:inline-block;
+        }
+        #employee:hover{
+            background-color: springgreen;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div id="employee">
+        employee type:
+        <input type="radio" value="value1" name="employee">Salaried
+        <input type="radio" value="value2" name="employee">Own business
+        
+    </div>
+</form>    
+  
+</body>
+
+
+7.)disply subscribe ticket
+
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>  
+    <style>
+        body{
+            background-color:black;
+            margin: 0 auto;
+            width: 210px;
+            height:200px
+        }
+        #container{
+            width:400px;
+            height:350px;
+            background-color: white;
+            padding:12px;
+            border-collapse:1px solid black;
+        }
+        .inner-border{
+            outline: 5px solid black;
+        
+        }
+        input[type="text"]{
+            border: none;
+            border-bottom:1px solid black;
+            
+        }
+        #left{
+                display:inline-block;
+                text-align:left;
+                float:left;
+        }
+        #right{
+                display:inline-block
+                text-align:center;
+                float:right;
+        }
+        h3{
+            background-color: tomato;
+        }
+        
+    </style> 
+ }
+</head>
+<body>
+<form>
+<div id="container">
+    <div class=inner-border>
+    <label for="title"><h3>Yes! I want to subscribe to Mag=O-Zine</h3><br></label>
+       <input type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+        <input type="text"><br>
+firstname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp lastname
+    
+        <input type="text" size=50><br>
+        address<br><br>
+        <input type="text" size=10>
+        <input type="text" size=10>
+        <input type="text" size=10><br>
+        city &nbsp;&NonBreakingSpace;&nbsp;&nbsp &nbsp;&NonBreakingSpace;&nbsp;&nbsp &nbsp;&NonBreakingSpace;&nbsp;&nbsp &nbsp;&NonBreakingSpace;&nbsp;&nbsp state
+        &nbsp;&NonBreakingSpace;&nbsp;&nbsp &nbsp;&NonBreakingSpace;&nbsp;&nbsp &nbsp;&NonBreakingSpace;&nbsp;&nbsp &nbsp;&NonBreakingSpace;&nbsp;&nbsp zip
+    
+        <br><br>
+        Subscribe For:<input type="checkbox" name="value1" value:"v1">1 year($19.95)
+        <input type="checkbox" name="value2" value:"v2">   2 year($35.00)<BR><BR>
+        Send me more information about:<br>
+        <input type="checkbox" name="value1" value:"v1">Compute-Zine<br>
+        <input type="checkbox" name="value2" value:"v2">Fishing-Zine<br>
+        <input type="checkbox" name="value3" value:"v3">Cat-O-Zine
+</div>
+</div>
+</form>    
+</body>
+
+---------------
+8.)Use the table tag to design given image
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        table, th, td{
+            border:1px solid black;
+            border-collapse: collapse;
+            
+        }
+        th{
+            background-color: cadetblue;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+        
+    
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>state of health </th>
+        <th colspan="2">Fasting value</th>
+        <th colspan="1">After eating</th>
+            
+    </tr>
+    <tr>
+        <th></th>
+        <th>Minimum</th>
+        <th>maximum</th>
+        <th>2 hours after eating</th>
+    </tr>
+    <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>less than 140</td>
+    </tr>
+    <tr>
+        <td>Pre-diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+
+    </tr>
+    <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>n/a</td>
+        <td>More than 200</td>
+    </tr>
+</table>
+  
+  
+</body>
+
+----------------------------------
+9.)Write HTML input tags snippet to show default values for all Form elements.
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+    
+   
+</head>
+<body>
+
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="click here">
+      </form>
+  
+</body>
+
+10.)In your, HTML page add the below line and Highlight it without using any CSS.
+"HTML & CSS is awesome"
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+    
+   
+</head>
+<body>
+
+    <ul>
+        <li><h1><u>"HTML & CSS is awesome"</u></h1></li>
+    </ul>
+  
+</body>
+
+
+---------------------------------------------------
+
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<META NAME="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+    
+   
+</head>
+<body>
+<form>
+    Enter your name:
+    <input type="text" id="fname" name="fname"><br>
+    <label for="fname">Last name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email">
+    password:
+    <input type="password" id="pwd" name="pwd">
+    employment type:
+    <input type="radio" value="value1" name:"type1">salaried
+    <input type="radio" value="value2" name:"type1">business
+    vehicles:
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <input type="checkbox" id="vehicle2" name="vehicle21" value="car">
+    select your favorite color:
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    <input type="date" id="birthday" name="birthday">
+    <input type="button" onclick="alert('Hello Birthday!')" value="Click Me!">
+
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+   
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+</form>
+  
+</body>
