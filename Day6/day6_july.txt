@@ -1,0 +1,174 @@
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+
+I'm JavaScript
+Hello
+Wor
+ld
+6
+
+
+2.)
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let fullname = fname+lname;
+alert( "hello" +name );
+
+3.)sum of 2 num
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(+a + +b);
+
+4.)
+var a = 2 > 12;
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+5.)
+let a = +prompt("Enter a number?");
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+if 0 it returns sucess
+
+
+6.)let value = +prompt('How many runs you scored in this ball');
+if (value === 4) {
+      console.log("You hit a Four");
+} else if (value === 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+
+7.)let login = 'Employee';
+let message = (login == 'Employee') ? 'hello':
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+8.)
+// You cant change the value of the msg
+let message;
+if (null || 2 || undefined)
+{
+ message = "welcome boss";
+}
+else
+{
+  message = "Go away";
+}
+  console.log(message);
+
+9.)
+let message;
+let lock = 0;
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+
+10.)
+//You can change only 2 characters
+let i = 3;
+while (i) {
+  console.log( i-- );
+}
+
+11.)for(let i=1;i<=10;i++)
+{
+    console.log(i)
+}
+12.to print even num
+for (let num = 2; num <= 20; num += 2) {
+    console.log(num)
+  }
+
+13.to print all gifts
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < gifts.length; i++) {
+  console.log('Wrapped '+gifts[i]+' and added a bow!');
+}
+
+14.code to disarm the bomb
+let countdown = 100;
+while (countdown > 1) {
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
+
+15.reason to get msg printed
+var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) { //it is a string
+ msg += "hi";
+ }
+if (lemeout) {//it is a num datatype so it cannot be executed
+ msg += 'hello';
+}
+console.log(msg);
+
+o/p:
+hi
+
+16.)to print largest  of 3
+aa = (a,b,c) => {
+    //let a,b,c;
+    console.log(a,b,c);
+    if(a>b && a>c){
+    console.log(a)}
+    else if(b>a && b>c){
+    console.log(b)}
+    else{
+    console.log(c)}
+   }
+   aa(1,2,3);
+
+17.)add the given num
+let n = 123;
+console.log(add(n));
+function add(n)
+{
+    //let arr=n.split("");
+    //console.log(n)
+    let val=[];;
+    let sum=0
+    while(n>0)
+    {
+    val=n%10;
+    n=Math.floor(n/10);
+    sum+=val;
+    }
+ return sum;
+}

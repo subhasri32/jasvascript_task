@@ -1,0 +1,147 @@
+1.)Fix the code to Sum of all numbers using IIFE function
+(function(arr) {
+ let sum = 0;
+ console.log(arr)
+ for (var i = 0; i < arr.length; i++){
+ sum += arr[i];
+ console.log(sum+"->"+arr[i])
+ }
+ console.log(sum);
+ return sum;
+})([9,8,5,6,4,3,2,1]);
+
+2.)Fix the code to gen Title caps.
+(function(arro) {
+    //console.log(arro)
+ for (var i = 0; i <= arro.length; i++) {
+ console.log(arro[i][0].toUpperCase()+ arro[i].substr(1));
+ }
+})(["guvi", "geek", "zen", "fullstack"]);
+
+
+3.)Fix the code to return the Prime numbers
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter((num)=>{
+ if((num==2)||(num==3))
+ {
+     console.log(num);
+     return true
+ }
+ else{
+    if((num%2!==0)||(num%3!==0))
+    {
+        console.log(num);
+        return true;
+    }
+ } 
+ });
+console.log(myPrime);
+
+4.)return sum of array
+const num = [10, 20, 30, 40,50,60,70,80,90,100] 
+const sum = num.reduce((prev,curr)=>{
+    return prev+curr;
+});
+console.log(sum);
+
+5.)Fix the code to rotate an array by k times and return rotated array using IIFE function
+Code:
+(function(arr,k) {
+  //console.log(arr);
+ var out = arr.slice(k, arr.length);
+ var count = out.length;
+ for (var i = 0; i < k ; i++) {
+ out[count] = arr[i];
+ count += 1;
+ }
+ console.log(out);
+ })([1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13],3)
+
+
+6.)title caps using IIFE
+
+(function(arr) {
+ for (var i = 0; i <= arr.length; i++) {
+ console.log(arr[i][0].toUpperCase() + arr[i].substr(1));
+ }
+})(["guvi", "geek", "zen", "fullstack"]);
+
+
+7.)print odd numbers
+
+(function(arr) {
+ for (var i = 0; i < arr.length; i++) {
+ if (arr[i] % 2 === 0) {
+ console.log(arr[i]);
+ }}
+})([1, 2, 3, 5, 7, 79, 7, 2, 6, 9, 4]);
+
+8.)reverse the string 
+(function(str){
+ let str1 = str.split("").reverse().join("");
+ console.log(str1); 
+})("abcd");
+
+9.)to remove duplicates
+
+var res = function(arr){
+    var newArr = [];
+    let pos=0;
+ for(var i=0; i < arr.length; i++){
+     //let pos=0;
+     
+     if(arr.indexOf(arr[i])>=pos)
+     {
+         
+        pos++;
+        newArr.push(arr[i])
+     }
+    
+    
+    
+ } 
+ console.log(newArr);
+}
+res(["guvi","geek","guvi","duplicate","geek"])
+console.log(res)
+ 
+
+
+10.)convert array of array into array of obj
+var array = [[["firstname","vasanth"],
+                ["lastname","Raje"],
+                ["age",24],
+                ["role","JSWizard"]],
+            [["firstname","Sri"],
+                ["lastname","Devi"],
+                ["age",28],
+                ["role", "Coder"]]];
+
+//let convert=function(array){
+var final=[];
+var new_object={};
+let len=array.length;
+console.log(array.length)
+for(let i=0;i<len;i++)
+{
+     var outer_remove = array.shift();
+     //console.log("insode")
+     console.log(outer_remove)
+     //console.log(array)
+     while(outer_remove.length!==0)
+     {
+     var inner_remove = outer_remove.shift()
+     //console.log(inner_remove);
+     var key = inner_remove[0]
+     console.log(key)
+     var value =inner_remove[1]
+     console.log(value)
+     new_object[key]=value
+     }
+     console.log(new_object);
+     final.push(new_object)
+}
+console.log(final)
+
+
+//convert(array);
